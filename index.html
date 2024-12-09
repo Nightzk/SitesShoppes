@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SitesShoppes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SitesShoppes</h1>
+            <p>A melhor solução para sites prontos ou sob encomenda!</p>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#plans">Planos</a></li>
+                <li><a href="#payment">Pagamento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <h2>Sobre Nós</h2>
+            <p>SitesShoppes é uma empresa que vende sites prontos ou sob encomenda. Escolha o plano ideal para você!</p>
+        </section>
+        <section id="plans" class="plans">
+            <h2>Planos</h2>
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p><strong>R$ 25,00</strong></p>
+                <p>1 site básico com todas as funcionalidades essenciais.</p>
+                <button class="select-plan" data-plan="Basic Plan" data-price="25">Selecionar</button>
+            </div>
+            <div class="plan">
+                <h3>Advanced Plan</h3>
+                <p><strong>R$ 40,00</strong></p>
+                <p>2 sites mais complexos com hospedagem (Github) e funcionalidades necessárias.</p>
+                <button class="select-plan" data-plan="Advanced Plan" data-price="40">Selecionar</button>
+            </div>
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <p><strong>R$ 70,00</strong></p>
+                <p>2 sites altamente personalizados, incluindo funcionalidades extras, com prioridade no atendimento e total controle de personalização pelo cliente.</p>
+                <button class="select-plan" data-plan="Premium Plan" data-price="70">Selecionar</button>
+            </div>
+        </section>
+        <section id="payment" class="payment">
+            <h2>Pagamento</h2>
+            <div class="payment-form">
+                <p><strong>Plano Selecionado:</strong> <span id="selected-plan">Nenhum</span></p>
+                <p><strong>Valor:</strong> R$ <span id="selected-price">0</span>,00</p>
+                <p>Escaneie o QR Code abaixo ou copie a chave Pix para pagamento:</p>
+                <img src="qrcode-placeholder.png" alt="QR Code Pix" id="qrcode">
+                <p><strong>Chave Pix:</strong> siteshoppes@empresa.com</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SitesShoppes - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
